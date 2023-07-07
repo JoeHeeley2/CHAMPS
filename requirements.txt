@@ -1,0 +1,10 @@
+matplotlib~=3.6.2
+pandas~=1.5.2
+numpy~=1.23.5
+seaborn~=0.12.2
+scikit-learn~=1.2.0
+tqdm~=4.64.1
+qml~=0.4.0.27
+dscribe~=1.2.1
+ase~=3.22.1
+networkx~=2.8.4
