@@ -1,10 +1,23 @@
+# Core data handling and plotting
 matplotlib~=3.6.2
 pandas~=1.5.2
 numpy~=1.23.5
 seaborn~=0.12.2
-scikit-learn~=1.2.0
 tqdm~=4.64.1
+networkx~=2.8.4
+
+# Chemistry toolkits (openbabel is used by the bundled mol_translator)
+rdkit~=2022.9.3
+openbabel-wheel~=3.1.1
+
+# Machine learning, descriptors and hyperparameter optimisation
+scikit-learn~=1.2.0
+scikit-optimize~=0.9.0
+bayesian-optimization~=1.4.2
 qml~=0.4.0.27
 dscribe~=1.2.1
 ase~=3.22.1
-networkx~=2.8.4
+
+# Graph models (GDCNN.py and graph features in classifier_model.py)
+torch~=1.13.1
+torch-geometric~=2.2.0

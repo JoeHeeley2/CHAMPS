@@ -115,37 +115,12 @@ A Python 3.8–3.10 environment is recommended.
 ```bash
 conda create -n champs python=3.9
 conda activate champs
-
-# Chemistry toolkits (most easily installed with conda)
-conda install -c conda-forge rdkit openbabel
-
-# Pinned Python packages
 pip install -r requirements.txt
 ```
 
-### Dependencies
-
-`requirements.txt` lists:
-
-- `matplotlib`, `seaborn`: plotting
-- `pandas` (~1.5), `numpy`: data handling
-- `scikit-learn`: KRR, classifiers, metrics, data splitting
-- `tqdm`: progress bars
-- `qml`: FCHL representations and kernels (IMPRESSION FCHL model)
-- `dscribe`, `ase`: SOAP / ACSF / Coulomb matrix / MBTR / LMBTR descriptors
-- `networkx`: molecular graphs
-
-These are imported but **not** in `requirements.txt`, so install them separately:
-
-- **`mol_translator`**: Butts group molecule conversion package. An old copy is bundled in this
-  repo; see [the next section](#about-the-included-mol_translator-and-impression-code).
-- `rdkit`: SMILES handling, 3D embedding, MMFF optimisation, fingerprints
-- `openbabel` / `pybel`: used inside `mol_translator`
-- `scikit-optimize` (`skopt`): Bayesian hyperparameter search (`BayesSearchCV`)
-- `bayesian-optimization` (`bayes_opt`): Gaussian process hyperparameter search in
-  `hyperparameter_tuning/HPS_gaussian.py`
-- `torch` and `torch_geometric`: only needed for the graph models (`GDCNN.py`, graph features in
-  `classifier_model.py`)
+`mol_translator` is not installed from `requirements.txt`. An old copy is bundled in this repo;
+see [Making `mol_translator` importable](#making-mol_translator-importable) and
+[the section on the included code](#about-the-included-mol_translator-and-impression-code).
 
 ### External quantum chemistry software
 
